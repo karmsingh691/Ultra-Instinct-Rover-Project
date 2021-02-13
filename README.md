@@ -1,8 +1,6 @@
 Karmdeep Singh
 
-
 Bogie Runt Rover Control Module
-
 
 Parts List
 
@@ -12,11 +10,5 @@ Parts List
 4. 6 140RPM Motors (3 In Parallel for M1 and M2)
 5. Mini Breadboard for Motor Connections
 6. USB Camera (Optional with VLC - Launched Seperately)
-
- 
-Wiring
-
-3 wires from the Pi go to the Roboclaw
-- UART TXD (GPIO 14 - Pin 8) goes to S1 pin close to the edge of the board
-- UART RXD (GPIO 14 - Pin 10) goes to S2  pinclose to the edge of the board
-- Pin 6 - Common Ground
+7. 3 HD-SR04 Ultra Sonic Range Sensors
+8. Anker 20100mAh Battery Pack 
