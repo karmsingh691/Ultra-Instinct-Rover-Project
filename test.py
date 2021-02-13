@@ -6,6 +6,8 @@
 # Bogie Runt Rover with a 2x7A Roboclaw Motor Controller
 # with a Bluetooth Connection to a PS4 Controller 
 
+# Controller Library Source: https://github.com/ArturSpirin/pyPS4Controller
+
 ############################### Parts List ####################################
 
 # 1. 2 LiPo Batteries rated at 3.7V connected in Series
