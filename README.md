@@ -1,14 +1,63 @@
-Karmdeep Singh
+# Ultra-Instinct Prototype Rover Project
 
-Bogie Runt Rover Control Module
+This is a personal project with the goal to create a fully autonomous Mars Rover. Various different sensors and techniques will be utilized to achieve autonomous travel.
 
-Parts List
+## Objectives and Motivation
 
-1. 2 LiPo Batteries rated at 3.7V connected in Series
-2. 2x7A RoboClaw Motor Controller
-3. Raspberry Pi 4B 
-4. 6 140RPM Motors (3 In Parallel for M1 and M2)
-5. Mini Breadboard for Motor Connections
-6. USB Camera (Optional with VLC - Launched Seperately)
-7. 3 HD-SR04 Ultra Sonic Range Sensors
-8. Anker 20100mAh Battery Pack 
+I had worked on a large scale Mars Rover at UW Tacoma that could not be finished due to COVID restrctions. I took it upon my self to construct a rover of my own to practice Python programming, Embedded Systems design, PCB design and many other technical skills that I hope to learn and improve on.
+
+## Parts List
+
+The following is the up-to-date parts list for the project. Links are provided when applicable.
+
+1. Bogie Runt Rover Kit from ServoCity (Includes 6 140RPM Motors) -->  https://www.servocity.com/bogie-runt-rover/
+2. 2 Lithium Polymer batteries rated at 3.7V 2000 mAh --> https://www.sparkfun.com/products/13855
+3. 2x7A Roboclaw Motor Controller --> https://www.servocity.com/roboclaw-2x7a-motor-controller/
+4. Raspberry Pi 4 (8GB RAM)
+5. Half-Size Breadboard
+6. 3 HD-SR04 Ultra Sonic Range Sensors
+7. Anker 20100 mAh Battery Pack
+8. PS4 Controller
+9. Jumper Wires
+
+## Current Build
+
+The images below show version 2.0 of the current rover design. From version 1, there were a lot of design changes made to make the rover more streamlined. Removed sensors that may not serve a function for autonomous travel as well as new battery supply for the Pi, rearranging the components to help with the center of mass and added 2 more ultra sonic sensors on the left and right side.
+
+![IMG_0805](https://user-images.githubusercontent.com/55263663/109580813-192acc00-7ab0-11eb-8c98-af28e35127a8.jpg)
+![IMG_0808](https://user-images.githubusercontent.com/55263663/109580868-2fd12300-7ab0-11eb-835c-0d006bbe778e.jpg)
+
+## Mobilizing the Rover
+
+At the current build, there are 2 ways to mobilize the rover. One of them uses a PS4 controller, the bluetooth functionality of the Raspberry Pi, pyPS4 library and the libraries that control the Roboclaw Motor Controller. The second method uses the Ultra sonic sensors to help the rover avoid obtructions in its path without physical human interaction. 
+
+### Remote Control Rover via PS4 Controller
+
+This method requires specific libraries with Python to work properly. One of them is the Roboclaw libraries that will be used for the remainder of the project as this motor controller will be used to control all sixes motors. The full library with sample code is provided by Basic Micron here: https://www.basicmicro.com/downloads. 
+
+This link will aid in setting up the controller with the raspberry pi --> https://resources.basicmicro.com/packet-serial-with-the-raspberry-pi-3/
+
+NOTE:The sampel codes imports "roboclaw" at the top. This will only work for Python 2. The file marked as "roboclaw_3" must be imported instead for Python 3
+
+The other library to be used is from this Github page --> https://github.com/ArturSpirin/pyPS4Controller
+
+Using a combination of the sample code from Basic Micron and the pyPS4 functions, I was able to control the movement of the rover with a PS4 controller. Basic movements include Forward, Backward, Left Rotate, and Right Rotate
+
+The code for this part of the project is listed as "test.py" --> https://github.com/karmsingh691/Ultra-Instinct-Rover-Project/blob/main/test.py
+
+### Obstacle Avoiding Rover 
+
+The next step for this project was to get some autnomous travel going. For the current build, I have three Ultra Sonic Range sensors on the front of the rover to aid in detecting obstrcutions in the rovers path. 
+
+#### How the sensors work
+
+In the most basic terms, the sensor has 2 "eyes". One of the eyes sends a sonic pulse towards an object. The pulse will bounce back into the other eye of the sensor. The time it takes for that pulse to be transmitted and recevied is calculated into a distance which can be collected by the Raspberry Pi.
+
+#### How the code works
+
+The code I have written is listed as "Obstacle Advoidance.py" in the Github --> https://github.com/karmsingh691/Ultra-Instinct-Rover-Project/blob/main/Obstacle_Advoidance.py
+
+The algorithm works as follows: 
+
+The front sensors responsibility is to detect objects that may be less than 30 cm from the rover. If there is a object, the left and right sensors will also report back if they see an objects less than 15 cm from the rover. If one side has a clearance of more than 15cm, the rover is instrcuted to rotate in the direction of the least amount of the obstructions. This is looped forever so that the rover can continue avoiding obstacles that it can detect.
+
