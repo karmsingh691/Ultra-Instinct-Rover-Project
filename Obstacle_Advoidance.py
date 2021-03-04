@@ -1,13 +1,13 @@
 ## Karmdeep Singh
-## 12/2/2020
+## 3/3/2021
 ## Ultra Instinct Rover Project
-## Version 1.0
+## Version 2.0
 
 ## Main Function: Uses HRSC04 Ultrasonic Sensors to avoid obstacles
 
 ## Components
 
-# 1. Raspberry Pi 4B
+# 1. Raspberry Pi 4
 # 2. 2x3.7 Li-Po Batteries (Series Connection)
 # 3. Anker 20100 mAh battery Pack (For Raspberry Pi)
 # 4. 2x7A Roboclaw Dual Motor Controller
@@ -87,17 +87,20 @@ def left_distance():
         GPIO.setup(L_TRIG,GPIO.OUT)
         GPIO.setup(L_ECHO,GPIO.IN)
         GPIO.output(L_TRIG,False)
-        
+        time.sleep(0.01)
         GPIO.output(L_TRIG,True)
         
         time.sleep(0.00001)
         
         GPIO.output(L_TRIG,False)
-        
-        while GPIO.input(L_ECHO) == 0:
+        l_pulse_start = time.time()
+        timeout = l_pulse_start + 0.04
+        while GPIO.input(L_ECHO) == 0 and l_pulse_start < timeout:
             l_pulse_start = time.time()
-
-        while GPIO.input(L_ECHO) == 1:
+            
+        l_pulse_end = time.time()
+        timeout = l_pulse_end + 0.04
+        while GPIO.input(L_ECHO) == 1 and l_pulse_end < timeout:
             l_pulse_end = time.time()
             
         l_pulse_duration = l_pulse_end-l_pulse_start 
@@ -112,17 +115,20 @@ def right_distance():
         GPIO.setup(R_TRIG,GPIO.OUT)
         GPIO.setup(R_ECHO,GPIO.IN)
         GPIO.output(R_TRIG,False)
-        
+        time.sleep(0.01)
         GPIO.output(R_TRIG,True)
         
         time.sleep(0.00001)
         
         GPIO.output(R_TRIG,False)
-        
-        while GPIO.input(R_ECHO) == 0:
+        r_pulse_start = time.time()
+        timeout = r_pulse_start + 0.04
+        while GPIO.input(R_ECHO) == 0 and r_pulse_start < timeout:
             r_pulse_start = time.time()
-
-        while GPIO.input(R_ECHO) == 1:
+            
+        r_pulse_end = time.time()
+        timeout = r_pulse_end + 0.04
+        while GPIO.input(R_ECHO) == 1 and r_pulse_end < timeout:
             r_pulse_end = time.time()
             
         r_pulse_duration = r_pulse_end-r_pulse_start
@@ -133,22 +139,28 @@ def right_distance():
 ######################## Obstacle Avoidance Function ######################
 
 def obstacle_avoidance():
+    
+    # Front Sensor 
+    
     while True:
         print("distance measurement in progress")
         GPIO.setup(F_TRIG,GPIO.OUT)
         GPIO.setup(F_ECHO,GPIO.IN)
         GPIO.output(F_TRIG,False)
-        time.sleep(0.0001)
+        time.sleep(0.01)
         GPIO.output(F_TRIG,True)
 
         time.sleep(0.00001)
         
         GPIO.output(F_TRIG,False)
-
-        while GPIO.input(F_ECHO) == 0:
+        f_pulse_start = time.time()
+        timeout = f_pulse_start + 0.04
+        while GPIO.input(F_ECHO) == 0 and f_pulse_start < timeout:
             f_pulse_start = time.time()
-
-        while GPIO.input(F_ECHO) == 1:
+            
+        f_pulse_end = time.time()
+        timeout = f_pulse_end + 0.04
+        while GPIO.input(F_ECHO) == 1 and f_pulse_end < timeout:
             f_pulse_end = time.time()
 
         f_pulse_duration = f_pulse_end-f_pulse_start
@@ -196,38 +208,5 @@ if __name__ == '__main__':
     except KeyboardInterrupt:
         stop()
         pass
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
