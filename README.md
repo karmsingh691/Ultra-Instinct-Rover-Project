@@ -4,7 +4,7 @@ This is a personal project with the goal to create a fully autonomous Mars Rover
 
 ## Objectives and Motivation
 
-I had worked on a large scale Mars Rover at UW Tacoma that could not be finished due to COVID restrctions. I took it upon my self to construct a rover of my own to practice Python programming, Embedded Systems design, PCB design and many other technical skills that I hope to learn and improve on.
+I had worked on a large scale Mars Rover at UW Tacoma that could not be finished due to COVID restrctions. I took it upon myself to construct a rover of my own to practice Python programming, Embedded Systems design, PCB design and many other technical skills that I hope to learn and improve on.
 
 ## Parts List
 
@@ -33,11 +33,11 @@ At the current build, there are 2 ways to mobilize the rover. One of them uses a
 
 ## Remote Control Rover via PS4 Controller
 
-This method requires specific libraries with Python to work properly. One of them is the Roboclaw libraries that will be used for the remainder of the project as this motor controller will be used to control all sixes motors. The full library with sample code is provided by Basic Micron here: https://www.basicmicro.com/downloads. 
+This method requires specific libraries with Python to work properly. One of them is the Roboclaw libraries that will be used for the remainder of the project as this motor controller will be used to control all six motors. The full library with sample code is provided by Basic Micron here: https://www.basicmicro.com/downloads. 
 
 This link will aid in setting up the controller with the raspberry pi --> https://resources.basicmicro.com/packet-serial-with-the-raspberry-pi-3/
 
-NOTE:The sampel codes imports "roboclaw" at the top. This will only work for Python 2. The file marked as "roboclaw_3" must be imported instead for Python 3
+NOTE:The sample code imports "roboclaw" at the top. This will only work for Python 2. The file marked as "roboclaw_3" must be imported instead for Python 3
 
 The other library to be used is from this Github page --> https://github.com/ArturSpirin/pyPS4Controller
 
@@ -51,7 +51,7 @@ The next step for this project was to get some autnomous travel going. For the c
 
 ### How the Sensors work (HD-SC04)
 
-In the most basic terms, the sensor has 2 "eyes". One of the eyes sends a sonic pulse towards an object. The pulse will bounce back into the other eye of the sensor. The time it takes for that pulse to be transmitted and recevied is calculated into a distance which can be collected by the Raspberry Pi.
+In the most basic terms, the sensor has 2 "eyes". One of the eyes sends a sonic pulse towards an object. The pulse will bounce back into the other eye of the sensor. The time it takes for that pulse to be transmitted and received is calculated into a distance based on the speed of sound in air which is collected by the Raspberry Pi.
 
 ### How the Code works
 
@@ -59,7 +59,7 @@ The code I have written is listed as "Obstacle Advoidance.py" in the Github --> 
 
 The algorithm works as follows: 
 
-The front sensors responsibility is to detect objects that may be less than 30 cm from the rover. If there is a object, the left and right sensors will also report back if they see an objects less than 15 cm from the rover. If one side has a clearance of more than 15cm, the rover is instrcuted to rotate in the direction of the least amount of the obstructions. This is looped forever so that the rover can continue avoiding obstacles that it can detect.
+The front sensors' responsibility is to detect objects that may be less than 30 cm from the rover. If there is a object, the left and right sensors will also report back if they see an objects less than 15 cm from the rover. If one side has a clearance of more than 15cm, the rover is instrcuted to rotate in the direction of the least amount of the obstructions. This is looped forever so that the rover can continue avoiding obstacles that it can detect.
 
 ## Youtube Playlist
 
