@@ -16,7 +16,8 @@ I had worked on a large scale Mars Rover at UW Tacoma that could not be finished
      * [Remote Control via Webservers](#remote-control-via-webservers)
        + [HTML Based Server](#html-based-server)
        + [Node-RED Server](#node-red-server)
-     * [Obstacle Avoiding Rover](#obstacle-avoiding-rover)
+ - [Autonomous Rover Programs](#autonomous-rover)
+   * [Obstacle Avoiding Rover](#obstacle-avoiding-rover)
 - [Youtube Playlist](#youtube-playlist)
 - [Future Plans](#future-plans)
 
