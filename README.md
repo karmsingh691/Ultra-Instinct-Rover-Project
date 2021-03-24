@@ -64,7 +64,11 @@ The code for this part of the project is listed as "test.py" --> https://github.
 
 ### HTML Based Server
 
+Details coming soon
+
 ### Node-RED Server
+
+Details coming soon
 
 # Autonomous Rover 
 
