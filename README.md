@@ -41,7 +41,7 @@ The images below show version 2.0 of the current rover design. From version 1, t
 ![IMG_0805](https://user-images.githubusercontent.com/55263663/109580813-192acc00-7ab0-11eb-8c98-af28e35127a8.jpg)
 ![IMG_0808](https://user-images.githubusercontent.com/55263663/109580868-2fd12300-7ab0-11eb-835c-0d006bbe778e.jpg)
 
-## Mobilizing the Rover
+# Mobilizing the Rover
 
 At the current build, there are 3 ways to mobilize the rover. One of them uses a PS4 controller, the bluetooth functionality of the Raspberry Pi, pyPS4 library and the libraries that control the Roboclaw Motor Controller. The second method uses the Ultra sonic sensors to help the rover avoid obtructions in its path without physical human interaction. The third method uses a HTML based webserver based on Python libraries to control the rover's movements.
 
@@ -59,6 +59,17 @@ Using a combination of the sample code from Basic Micron and the pyPS4 functions
 
 The code for this part of the project is listed as "test.py" --> https://github.com/karmsingh691/Ultra-Instinct-Rover-Project/blob/main/test.py
 
+## Using a Webserver to control the Rover
+
+### HTML Based Server
+
+### Node-RED Server
+
+
+# Autonomous Rover 
+
+Programs and techniques used to create a autonomous rover. 
+
 ## Obstacle Avoiding Rover 
 
 The next step for this project was to get some autnomous travel going. For the current build, I have three Ultra Sonic Range sensors on the front of the rover to aid in detecting obstrcutions in the rovers path. 
@@ -75,11 +86,6 @@ The algorithm works as follows:
 
 The front sensors' responsibility is to detect objects that may be less than 30 cm from the rover. If there is a object, the left and right sensors will also report back if they see an objects less than 15 cm from the rover. If one side has a clearance of more than 15cm, the rover is instrcuted to rotate in the direction of the least amount of the obstructions. This is looped forever so that the rover can continue avoiding obstacles that it can detect.
 
-## Using a Webserver to control the Rover
-
-### HTML Based Server
-
-### Node-RED Server
 
 ## Youtube Playlist
 
