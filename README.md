@@ -2,6 +2,8 @@
 
 This is a personal project with the goal to create a fully autonomous Mars Rover. Various different sensors and techniques will be utilized to achieve autonomous travel.
 
+- [Heading](#heading)
+
 ## Objectives and Motivation
 
 I had worked on a large scale Mars Rover at UW Tacoma that could not be finished due to COVID restrctions. I took it upon myself to construct a rover of my own to practice Python programming, Embedded Systems design, PCB design and many other technical skills that I hope to learn and improve on.
