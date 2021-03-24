@@ -40,7 +40,7 @@ The images below show version 2.0 of the current rover design. From version 1, t
 
 ## Mobilizing the Rover
 
-At the current build, there are 2 ways to mobilize the rover. One of them uses a PS4 controller, the bluetooth functionality of the Raspberry Pi, pyPS4 library and the libraries that control the Roboclaw Motor Controller. The second method uses the Ultra sonic sensors to help the rover avoid obtructions in its path without physical human interaction. 
+At the current build, there are 3 ways to mobilize the rover. One of them uses a PS4 controller, the bluetooth functionality of the Raspberry Pi, pyPS4 library and the libraries that control the Roboclaw Motor Controller. The second method uses the Ultra sonic sensors to help the rover avoid obtructions in its path without physical human interaction. The third method uses a HTML based webserver based on Python libraries to control the rover's movements.
 
 ## Remote Control Rover via PS4 Controller
 
@@ -71,6 +71,12 @@ The code I have written is listed as "Obstacle Advoidance.py" in the Github --> 
 The algorithm works as follows: 
 
 The front sensors' responsibility is to detect objects that may be less than 30 cm from the rover. If there is a object, the left and right sensors will also report back if they see an objects less than 15 cm from the rover. If one side has a clearance of more than 15cm, the rover is instrcuted to rotate in the direction of the least amount of the obstructions. This is looped forever so that the rover can continue avoiding obstacles that it can detect.
+
+## Using a Webserver to control the Rover
+
+### HTML Based Server
+
+### Server using Node-RED
 
 ## Youtube Playlist
 
