@@ -66,10 +66,9 @@ The code for this part of the project is listed as "test.py" --> https://github.
 
 ### Node-RED Server
 
-
 # Autonomous Rover 
 
-Programs and techniques used to create a autonomous rover. 
+The following section discusses the programs and techniques that I have used to get the rover to move autonomously without human interaction. The main program so far is based on using sensors to help the rover avoid obstructions in its path. 
 
 ## Obstacle Avoiding Rover 
 
