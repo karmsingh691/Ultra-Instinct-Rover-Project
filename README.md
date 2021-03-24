@@ -60,7 +60,7 @@ Using a combination of the sample code from Basic Micron and the pyPS4 functions
 
 The code for this part of the project is listed as "test.py" --> https://github.com/karmsingh691/Ultra-Instinct-Rover-Project/blob/main/test.py
 
-## Using a Webserver to control the Rover
+## Remote Control via Webservers
 
 ### HTML Based Server
 
