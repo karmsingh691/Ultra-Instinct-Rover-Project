@@ -11,14 +11,13 @@ I had worked on a large scale Mars Rover at UW Tacoma that could not be finished
 
 - [Parts List](#parts-list)
 - [Current Build](#current-build)
-- [Mobilizing the Rover](#mobilizing-the-rover)
+- [Mobilizing the Rover](#mobilizing-the-rover0
+
      * [Remote Control via PS4 Controller](#remote-control-rover-via-PS4-controller)
      * [Remote Control via Webservers](#remote-control-via-webservers)
        + [HTML Based Server](#html-based-server)
+       + [Node-RED Server](#node-red-server)
      * [Obstacle Avoiding Rover](#obstacle-avoiding-rover)
-
-- [Remote Control via PS4 Controller](#remote-control-rover-via-PS4-controller)
-- [Obstacle Avoiding Rover](#obstacle-avoiding-rover)
 - [Youtube Playlist](#youtube-playlist)
 - [Future Plans](#future-plans)
 
@@ -81,7 +80,7 @@ The front sensors' responsibility is to detect objects that may be less than 30 
 
 ### HTML Based Server
 
-### Server using Node-RED
+### Node-RED Server
 
 ## Youtube Playlist
 
