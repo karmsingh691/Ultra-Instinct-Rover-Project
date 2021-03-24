@@ -2,11 +2,20 @@
 
 This is a personal project with the goal to create a fully autonomous Mars Rover. Various different sensors and techniques will be utilized to achieve autonomous travel.
 
-- [Parts List](#parts-list)
 
 ## Objectives and Motivation
 
 I had worked on a large scale Mars Rover at UW Tacoma that could not be finished due to COVID restrctions. I took it upon myself to construct a rover of my own to practice Python programming, Embedded Systems design, PCB design and many other technical skills that I hope to learn and improve on.
+
+# Table of Contents
+
+- [Parts List](#parts-list)
+- [Current Build](#current-build)
+- [Mobilizing the Rover](#mobilizing-the-rover)
+- [Remote Control via PS4 Controller](#remote-control-rover-via-PS4-controller)
+- [Obstacle Avoiding Rover](#obstacle-avoiding-rover)
+- [Youtube Playlist](#youtube-playlist)
+- [Future Plans](#future-plans)
 
 ## Parts List
 
