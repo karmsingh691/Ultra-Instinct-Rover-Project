@@ -11,8 +11,7 @@ I had worked on a large scale Mars Rover at UW Tacoma that could not be finished
 
 - [Parts List](#parts-list)
 - [Current Build](#current-build)
-- [Mobilizing the Rover](#mobilizing-the-rover0
-
+- [Mobilizing the Rover](#mobilizing-the-rover)
      * [Remote Control via PS4 Controller](#remote-control-rover-via-PS4-controller)
      * [Remote Control via Webservers](#remote-control-via-webservers)
        + [HTML Based Server](#html-based-server)
