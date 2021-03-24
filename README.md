@@ -2,7 +2,7 @@
 
 This is a personal project with the goal to create a fully autonomous Mars Rover. Various different sensors and techniques will be utilized to achieve autonomous travel.
 
-- [Parts List](#partslist)
+- [Parts List](#parts-list)
 
 ## Objectives and Motivation
 
