@@ -64,6 +64,8 @@ The code for this part of the project is listed as "test.py" --> https://github.
 
 ### HTML Based Server
 
+Source Code --> https://www.e-tinkers.com/2018/04/how-to-control-raspberry-pi-gpio-via-http-web-server/
+
 Details coming soon
 
 ### Node-RED Server
