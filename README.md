@@ -68,10 +68,10 @@ This server is constructed with Python's built-in https server library and allow
 
 <img width="1175" alt="Screen Shot 2021-03-29 at 5 33 50 PM" src="https://user-images.githubusercontent.com/55263663/112916259-0efeec00-90b5-11eb-9e63-109e29d04f2a.png">
 
+The built-in library is a great way to get started with creating webservers. I had only used HTML to customize the server design but we could also use CSS and Javascript to further improve the web server's UI. 
 
-Source Code --> https://www.e-tinkers.com/2018/04/how-to-control-raspberry-pi-gpio-via-http-web-server/
+Here is the source code I used to build this webserver: --> https://www.e-tinkers.com/2018/04/how-to-control-raspberry-pi-gpio-via-http-web-server/
 
-Details coming soon
 
 ### Node-RED Server
 
