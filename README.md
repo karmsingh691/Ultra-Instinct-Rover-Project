@@ -64,6 +64,11 @@ The code for this part of the project is listed as "test.py" --> https://github.
 
 ### HTML Based Server
 
+This server is constructed with Python's built-in https server library and allows users to create an HTML based server with Python. I found a website that had used the library to control the GPIO pins of a Raspberry Pi and be able to turn off an on an LED through a local webserver. Using the template, I programmed additional HTML code to add features to the server that would allow me to control the rover's movements by clicking hyperlinks. The webserver also keeps track of the CPU temperature of the Pi and can also initiate the obstacle avoidance program with a click of a button. 
+
+<img width="1175" alt="Screen Shot 2021-03-29 at 5 33 50 PM" src="https://user-images.githubusercontent.com/55263663/112916259-0efeec00-90b5-11eb-9e63-109e29d04f2a.png">
+
+
 Source Code --> https://www.e-tinkers.com/2018/04/how-to-control-raspberry-pi-gpio-via-http-web-server/
 
 Details coming soon
