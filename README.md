@@ -48,7 +48,7 @@ Check out the Youtube video where I discuss my design and the process --> https:
 Udemy Course --> https://www.udemy.com/course/pcb-design-eagle/
 
 ![Caption](https://user-images.githubusercontent.com/55263663/113646131-0b331280-963d-11eb-8094-8f6ab8cfa5e2.jpg)
-<div align="center">The derogatory term “scrub” means several different things. One definition is someone (especially a game player) who is not good at something (especially a game). By this definition, we all start out as scrubs, and there is certainly no shame in that. I mean the term differently, though. A scrub is a player who is handicapped by self-imposed rules that the game knows nothing about. A scrub does not play to win.</div>
+<div align="center">Updated Design with PCB Board</div>
 ![IMG_0808](https://user-images.githubusercontent.com/55263663/109580868-2fd12300-7ab0-11eb-835c-0d006bbe778e.jpg)
 
 # Mobilizing the Rover
