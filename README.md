@@ -11,6 +11,7 @@ I had worked on a large scale Mars Rover at UW Tacoma that could not be finished
 
 - [Parts List](#parts-list)
 - [Current Build](#current-build)
+     * [PCB Addition](#pcb-addition)
 - [Mobilizing the Rover](#mobilizing-the-rover)
      * [Remote Control via PS4 Controller](#remote-control-rover-via-PS4-controller)
      * [Remote Control via Webservers](#remote-control-via-webservers)
@@ -41,7 +42,7 @@ The images below show version 2.0 of the current rover design. From version 1, t
 
 ## PCB Addition
 
-To save space on the rover, I had converted the breadboard circuit that connects the Ultrasonic sensors and the motors to a PCB design that I developed in Autodesk Eagle. Updated images are found below. I learned how to build the board through a free Udemy Course which covers the basics and I was able to print, solder and implement the board within 2 weeks. This will allow me to use the breadboard to prototype other ciruits for different sensors.
+To save space on the rover, I had converted the breadboard circuit that connects the Ultrasonic sensors and the motors to a PCB design that I developed in Autodesk Eagle. Updated images are found below. I learned how to build the board through a free Udemy Course which covers the basics and I was able to print, solder and implement the board within 2 weeks. This will allow me to use the breadboard to prototype other circuits for different sensors.
 
 Check out the Youtube video where I discuss my design and the process --> https://www.youtube.com/watch?v=KzVD4Ft9z3k&t=2s
 
