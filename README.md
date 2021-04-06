@@ -35,9 +35,19 @@ The following is the up-to-date parts list for the project. Links are provided w
 8. PS4 Controller
 9. Jumper Wires
 
-## Current Build
+# Current Build
 
 The images below show version 2.0 of the current rover design. From version 1, there were a lot of design changes made to make the rover more streamlined. Removed sensors that may not serve a function for autonomous travel as well as new battery supply for the Pi, rearranging the components to help with the center of mass and added 2 more ultra sonic sensors on the left and right side.
+
+## PCB Addition
+
+To save space on the rover, I had converted the breadboard circuit that connects the Ultrasonic sensors and the motors to a PCB design that I developed in Autodesk Eagle. Updated images are found below. I learned how to build the board through a free Udemy Course which covers the basics and I was able to print, solder and implement the board within 2 weeks. This will allow me to use the breadboard to prototype other ciruits for different sensors.
+
+Check out the Youtube video where I discuss my design and the process --> https://www.youtube.com/watch?v=KzVD4Ft9z3k&t=2s
+
+Udemy Course --> https://www.udemy.com/course/pcb-design-eagle/
+
+![Caption](https://user-images.githubusercontent.com/55263663/113646131-0b331280-963d-11eb-8094-8f6ab8cfa5e2.jpg)
 
 ![IMG_0805](https://user-images.githubusercontent.com/55263663/109580813-192acc00-7ab0-11eb-8c98-af28e35127a8.jpg)
 ![IMG_0808](https://user-images.githubusercontent.com/55263663/109580868-2fd12300-7ab0-11eb-835c-0d006bbe778e.jpg)
