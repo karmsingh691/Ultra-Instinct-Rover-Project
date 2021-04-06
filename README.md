@@ -47,10 +47,8 @@ Check out the Youtube video where I discuss my design and the process --> https:
 
 Udemy Course --> https://www.udemy.com/course/pcb-design-eagle/
 
-![Caption](https://user-images.githubusercontent.com/55263663/113646131-0b331280-963d-11eb-8094-8f6ab8cfa5e2.jpg)
-
 <div align="center">Updated Design with PCB Board</div>
-
+![Caption](https://user-images.githubusercontent.com/55263663/113646131-0b331280-963d-11eb-8094-8f6ab8cfa5e2.jpg)
 ![IMG_0808](https://user-images.githubusercontent.com/55263663/109580868-2fd12300-7ab0-11eb-835c-0d006bbe778e.jpg)
 
 # Mobilizing the Rover
