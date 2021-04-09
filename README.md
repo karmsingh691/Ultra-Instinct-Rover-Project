@@ -86,7 +86,37 @@ Here is the source code I used to build this webserver: --> https://www.e-tinker
 
 ### Node-RED Server
 
-Details coming soon
+Node-RED is a flow based programming tool that allows users to control hardware devices such as Raspberry Pi and Arduino within their local network. It also allows the user to create their own UI to setup their network and monitor it from their laptop or mobile web browser.
+
+#### Set-Up
+
+I used the following link to set up Node-RED on my Raspberry Pi using Terminal commands. I highly recommend to use the autostart feature so that the program starts on its own when the Pi is booted.
+
+Node-RED Raspberry Pi Link --> 
+
+If you have Raspian installed with recommended software, Node-RED should already be preinstalled on your device. The only thing to do is enable the autostart. The link below is the Raspian OS with Recommended Software image.
+
+Raspian OS -->
+
+#### My Node-RED User Interface
+
+I used Node-RED to control the Raspberry Pi on the UI Rover. I have set up different webpages on the server to monitor and control different aspects of the prototype rover.
+
+
+On the homepage, I am able to shutdown or reboot the Pi when I need to as well as update the Pi and execute the HTML server program and start the web server remotely. 
+
+Image
+
+Another page is designated to monitoring the Pi's CPU temperuture and the avaiable memory. If my Pi suddenly slows down, I can check if the Pi is overheating or if the RAM is full.
+
+Image
+
+The rover itself can be controlled by setting up switches that propel the rover forward, backward, left, right and stop. The last page I had set up is able to start the Obstacle Avoidance program remotely by clicking a switch. Both of these pages allow me to test the rover without needing to connect a monitor or use VNC server. I have the Raspberry Pi set up to autostart Node-RED on boot so it is ready to use right away.
+
+Image
+Image
+
+In future iterations, I will continue to add to the webserver more functions statistics that will be useful when the rover is fully autonomous.
 
 # Autonomous Rover 
 
