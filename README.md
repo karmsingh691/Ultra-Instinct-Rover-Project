@@ -102,22 +102,21 @@ Raspian OS --> https://www.raspberrypi.org/software/operating-systems/
 
 I used Node-RED to control the Raspberry Pi on the UI Rover. I have set up different webpages on the server to monitor and control different aspects of the prototype rover.
 
-
-On the homepage, I am able to shutdown or reboot the Pi when I need to as well as update the Pi and execute the HTML server program and start the web server remotely. 
+On the homepage, I am able to shutdown or reboot the Pi when I need to as well as update the Pi and execute the HTML server program to start the web server remotely. 
 
 <img width="1440" alt="Screen Shot 2021-04-09 at 3 00 22 PM" src="https://user-images.githubusercontent.com/55263663/114245029-74b86700-9944-11eb-9a33-cc7af4412ed1.png">
 
-Another page is designated to monitoring the Pi's CPU temperuture and the avaiable memory. If my Pi suddenly slows down, I can check if the Pi is overheating or if the RAM is full.
+Another page is designated to monitoring the Pi's CPU temperuture and the available memory. If my Pi suddenly slows down, I can check if the Pi is overheating or if the RAM is full.
 
 <img width="1440" alt="Screen Shot 2021-04-09 at 2 59 29 PM" src="https://user-images.githubusercontent.com/55263663/114245043-7d10a200-9944-11eb-8ca0-698f7407b925.png">
 
-The rover itself can be controlled by setting up switches that propel the rover forward, backward, left, right and stop. The last page I had set up is able to start the Obstacle Avoidance program remotely by clicking a switch. Both of these pages allow me to test the rover without needing to connect a monitor or use VNC server. I have the Raspberry Pi set up to autostart Node-RED on boot so it is ready to use right away.
+The rover itself can be controlled by setting up switches that direct the rover forward, backward, left, right and stop. The last page I had set up is able to start the Obstacle Avoidance program remotely by clicking a switch. Both of these pages allow me to test the rover without needing to connect a monitor or use VNC server. I have the Raspberry Pi set up to autostart Node-RED on boot so it is ready to use right away.
 
 <img width="1440" alt="Screen Shot 2021-04-09 at 3 00 12 PM" src="https://user-images.githubusercontent.com/55263663/114245054-826dec80-9944-11eb-9798-3d0d927b39ec.png">
 
 <img width="1439" alt="Screen Shot 2021-04-09 at 3 00 01 PM" src="https://user-images.githubusercontent.com/55263663/114245057-869a0a00-9944-11eb-8112-adffffc06441.png">
 
-In future iterations, I will continue to add to the webserver more functions statistics that will be useful when the rover is fully autonomous.
+In future iterations, I will continue to add to the webserver with more functions and statistics that will be useful when the rover is fully autonomous.
 
 # Autonomous Rover 
 
