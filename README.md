@@ -92,11 +92,11 @@ Node-RED is a flow based programming tool that allows users to control hardware 
 
 I used the following link to set up Node-RED on my Raspberry Pi using Terminal commands. I highly recommend to use the autostart feature so that the program starts on its own when the Pi is booted.
 
-Node-RED Raspberry Pi Link --> 
+Node-RED Raspberry Pi Link --> https://nodered.org/docs/getting-started/raspberrypi
 
 If you have Raspian installed with recommended software, Node-RED should already be preinstalled on your device. The only thing to do is enable the autostart. The link below is the Raspian OS with Recommended Software image.
 
-Raspian OS -->
+Raspian OS --> https://www.raspberrypi.org/software/operating-systems/
 
 #### My Node-RED User Interface
 
